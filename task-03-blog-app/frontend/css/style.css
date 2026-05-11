@@ -1,0 +1,72 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #2d3748;
+  min-height: 100vh;
+}
+
+.container { max-width: 720px; margin: 0 auto; padding: 32px 20px; }
+
+header h1 { font-size: 2rem; color: #2b6cb0; text-align: center; margin-bottom: 28px; }
+
+h2 { font-size: 1.1rem; color: #4a5568; margin-bottom: 14px; }
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 28px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  margin-bottom: 12px;
+  outline: none;
+  resize: vertical;
+  transition: border 0.2s;
+}
+
+input:focus, textarea:focus { border-color: #2b6cb0; }
+
+button {
+  padding: 11px 24px;
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover { background: #2c5282; }
+
+.post-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  border-left: 4px solid #2b6cb0;
+}
+
+.post-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.post-meta { font-size: 0.78rem; color: #a0aec0; margin-bottom: 10px; }
+.post-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.6; margin-bottom: 14px; }
+
+.delete-btn { padding: 6px 14px; background: #e53e3e; font-size: 0.82rem; }
+.delete-btn:hover { background: #c53030; }
+
+.count { font-size: 0.85rem; color: #a0aec0; font-weight: 400; }
+.error { color: #e53e3e; font-size: 0.85rem; margin-top: 8px; }
+.empty-msg { text-align: center; color: #a0aec0; font-style: italic; padding: 24px 0; }
+.hidden { display: none; }

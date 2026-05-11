@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7fafc;
+  color: #2d3748;
+  min-height: 100vh;
+}
+
+.container { max-width: 820px; margin: 0 auto; padding: 32px 20px; }
+
+h1 { font-size: 2rem; color: #553c9a; text-align: center; margin-bottom: 28px; }
+h2 { font-size: 1rem; color: #4a5568; margin-bottom: 12px; }
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 20px;
+}
+
+.top-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 600px) { .top-panel { grid-template-columns: 1fr; } }
+
+input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.93rem;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus { border-color: #553c9a; }
+
+button {
+  width: 100%;
+  padding: 11px;
+  background: #553c9a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.93rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover { background: #44337a; }
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.contact-card:hover { box-shadow: 0 2px 8px rgba(85,60,154,0.1); }
+
+.avatar {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: #553c9a;
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.contact-info { flex: 1; }
+.contact-info strong { display: block; font-size: 0.97rem; }
+.contact-info span { font-size: 0.82rem; color: #718096; }
+
+.del-btn { width: auto; padding: 7px 14px; background: #e53e3e; font-size: 0.82rem; }
+.del-btn:hover { background: #c53030; }
+
+.count { font-size: 0.82rem; color: #a0aec0; font-weight: 400; }
+.search-count { font-size: 0.82rem; color: #553c9a; margin-top: -4px; margin-bottom: 4px; }
+.loader { color: #a0aec0; font-style: italic; padding: 10px 0; }
+.error { color: #e53e3e; font-size: 0.83rem; margin-top: 6px; }
+.empty-msg { text-align: center; color: #a0aec0; font-style: italic; padding: 20px 0; }
+.hidden { display: none; }

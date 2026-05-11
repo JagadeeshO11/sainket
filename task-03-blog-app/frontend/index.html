@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog App</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header><h1>📝 My Blog</h1></header>
+
+    <section class="create-post card">
+      <h2>New Post</h2>
+      <input type="text" id="postTitle" placeholder="Post title..." />
+      <textarea id="postContent" placeholder="Write your post here..." rows="4"></textarea>
+      <button id="addPostBtn">Publish Post</button>
+      <div id="formError" class="error hidden"></div>
+    </section>
+
+    <section class="posts-section">
+      <h2>All Posts <span id="postCount" class="count"></span></h2>
+      <div id="postsList"></div>
+      <p id="emptyMsg" class="empty-msg hidden">No posts yet. Write your first post!</p>
+    </section>
+  </div>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

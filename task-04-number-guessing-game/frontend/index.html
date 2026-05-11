@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Number Guessing Game</h1>
+    <p class="subtitle">Guess a number between <strong>1</strong> and <strong>100</strong></p>
+
+    <div class="game-card">
+      <div class="attempts-bar">Attempts: <span id="attempts">0</span></div>
+      <div class="input-row">
+        <input type="number" id="guessInput" placeholder="Your guess..." min="1" max="100" />
+        <button id="guessBtn">Guess</button>
+      </div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div id="winMsg" class="win-msg hidden">
+        🎉 Correct! You guessed it in <span id="finalAttempts"></span> attempts!
+        <button id="restartBtn">Play Again</button>
+      </div>
+    </div>
+
+    <div class="history-card">
+      <h3>Guess History</h3>
+      <ul id="historyList"></ul>
+      <p id="noHistory" class="no-history">No guesses yet.</p>
+    </div>
+  </div>
+  <script src="js/game.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
